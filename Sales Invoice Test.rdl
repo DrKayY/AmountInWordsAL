@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="TIN">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TIN</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TIN</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="InvoiceAddress">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>InvoiceAddress</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>InvoiceAddress</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VesselName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VesselName</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VesselName</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VATAmount">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VATAmount</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VATAmount</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Location">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Location</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Location</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VesselDate">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VesselDate</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VesselDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmountInWords">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmountInWords</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmountInWords</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PreparedBy">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PreparedBy</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PreparedBy</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ApprovedBy">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ApprovedBy</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ApprovedBy</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CustomerSign">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CustomerSign</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CustomerSign</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Total">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Total</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Total</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Website">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Website</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Website</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BankBranch">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BankBranch</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BankBranch</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BankAccNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BankAccNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BankAccNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BankName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BankName</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BankName</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="E_MailCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>E_MailCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>E_MailCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Phone_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Phone_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Phone_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VAT_Registration_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VAT_Registration_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VAT_Registration_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DescriptionCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DescriptionCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DescriptionCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QuantityCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QuantityCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QuantityCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Unit_PriceCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Unit_PriceCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Unit_PriceCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VAT__Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VAT__Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VAT__Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmountCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmountCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmountCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amount_Including_VATCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amount_Including_VATCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amount_Including_VATCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="Address_2">
+          <DataField>Address_2</DataField>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+        </Field>
+        <Field Name="Bank_Account_No_">
+          <DataField>Bank_Account_No_</DataField>
+        </Field>
+        <Field Name="Bank_Name">
+          <DataField>Bank_Name</DataField>
+        </Field>
+        <Field Name="Bank_Branch_No_">
+          <DataField>Bank_Branch_No_</DataField>
+        </Field>
+        <Field Name="E_Mail">
+          <DataField>E_Mail</DataField>
+        </Field>
+        <Field Name="Picture">
+          <DataField>Picture</DataField>
+        </Field>
+        <Field Name="Phone_No_">
+          <DataField>Phone_No_</DataField>
+        </Field>
+        <Field Name="VAT_Registration_No_">
+          <DataField>VAT_Registration_No_</DataField>
+        </Field>
+        <Field Name="toWordsResult">
+          <DataField>toWordsResult</DataField>
+        </Field>
+        <Field Name="totalAmountIncludingVAT">
+          <DataField>totalAmountIncludingVAT</DataField>
+        </Field>
+        <Field Name="totalAmountIncludingVATFormat">
+          <DataField>totalAmountIncludingVATFormat</DataField>
+        </Field>
+        <Field Name="No_">
+          <DataField>No_</DataField>
+        </Field>
+        <Field Name="Bill_to_Name">
+          <DataField>Bill_to_Name</DataField>
+        </Field>
+        <Field Name="Bill_to_Name_2">
+          <DataField>Bill_to_Name_2</DataField>
+        </Field>
+        <Field Name="Bill_to_Customer_No_">
+          <DataField>Bill_to_Customer_No_</DataField>
+        </Field>
+        <Field Name="Bill_to_Address">
+          <DataField>Bill_to_Address</DataField>
+        </Field>
+        <Field Name="Bill_to_City">
+          <DataField>Bill_to_City</DataField>
+        </Field>
+        <Field Name="Order_Date">
+          <DataField>Order_Date</DataField>
+        </Field>
+        <Field Name="Salesperson_Code">
+          <DataField>Salesperson_Code</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_Name">
+          <DataField>Sell_to_Customer_Name</DataField>
+        </Field>
+        <Field Name="Sell_to_Address">
+          <DataField>Sell_to_Address</DataField>
+        </Field>
+        <Field Name="Sell_to_City">
+          <DataField>Sell_to_City</DataField>
+        </Field>
+        <Field Name="Ship_to_Address">
+          <DataField>Ship_to_Address</DataField>
+        </Field>
+        <Field Name="Ship_to_City">
+          <DataField>Ship_to_City</DataField>
+        </Field>
+        <Field Name="Shipment_Date">
+          <DataField>Shipment_Date</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="QuantityFormat">
+          <DataField>QuantityFormat</DataField>
+        </Field>
+        <Field Name="Unit_of_Measure">
+          <DataField>Unit_of_Measure</DataField>
+        </Field>
+        <Field Name="Unit_Price">
+          <DataField>Unit_Price</DataField>
+        </Field>
+        <Field Name="Unit_PriceFormat">
+          <DataField>Unit_PriceFormat</DataField>
+        </Field>
+        <Field Name="VAT__">
+          <DataField>VAT__</DataField>
+        </Field>
+        <Field Name="VAT__Format">
+          <DataField>VAT__Format</DataField>
+        </Field>
+        <Field Name="Line_Discount__">
+          <DataField>Line_Discount__</DataField>
+        </Field>
+        <Field Name="Line_Discount__Format">
+          <DataField>Line_Discount__Format</DataField>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+        </Field>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="Amount_Including_VAT">
+          <DataField>Amount_Including_VAT</DataField>
+        </Field>
+        <Field Name="Amount_Including_VATFormat">
+          <DataField>Amount_Including_VATFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

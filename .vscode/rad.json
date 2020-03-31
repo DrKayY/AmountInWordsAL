@@ -1,0 +1,1 @@
+﻿{"Added":[],"Modified":[{"Id":50100,"Kind":13,"Name":"SalesInvoiceTest","PackagePath":"/src/NewSalesReportDesign/SalesInvoiceTest.Report.al"},{"Id":50103,"Kind":11,"Name":"Replace Reports","PackagePath":"/src/NewSalesReportDesign/ChangeReport.Codeunit.al"}],"Removed":[{"Id":50104,"Kind":11,"Name":"AmountInWords","PackagePath":"/src/AmountInWords.Codeunit.al"}]}
